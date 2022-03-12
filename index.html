@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Bawaan tutor -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Zafar & Silfi</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand lora" href="#">Zafar & Silfi</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#wedingbegin"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#pengantin">Pengantin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#pelaksanaan">Acara</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Ucapan dan Doa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir Navber -->
+
+    <!-- Navbar image -->
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-center" data-aos="fade-down" data-aos-duration="1000">
+        <h5 class="sambutan">Anda diundang ke pernikahan kami</h5>
+        <h1 class="nama pt1">Zafar Sidik</h1>
+        <h1 class="dan">Dan</h1>
+        <h1 class="nama">Silfi Lailatul Solihah</h1>
+        <h5 class="info">Minggu, 29 Mei 2022</h5>
+
+        <audio id="Audio" src="mp3/Full House Ost. Like before Instrumental LeeBoRam Geu Deh Ji Geum.mp3"></audio>
+          <div id="box" class="">
+            <div class="id">
+              <a class="buka" onclick="tongglePlay()" href="#wedingbegin">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Buka Undangan
+              </a>
+            </div>
+          </div>
+        <h1 class="imisial">Z & S</h1>
+      </div>
+    </div>
+    <!-- Akhir Navbar image -->
+
+    <!-- wedding begin -->
+    <section id="wedingbegin">
+      <div class="container-fluid">
+        <div class="row captgl">
+          <div class="col text-center satisft" data-aos="fade-up" data-aos-duration="1500">
+            <h3 class="pt6 pb1 lora s2">We are getting married</h3>
+            <h1 class="satisfy s6">Zafar & Silfi</h1>
+            <h2 class="lora s3">Minggu, 29 Mei 2022</h2>
+            <h3 class="lora s2 pt1">- Save the Date -</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 text-center" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+            <p id="day" class="counter">0</p>
+            <p class="counter-title">Hari</p>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500">
+            <p id="hour" class="counter">0</p>
+            <p class="counter-title">Jam</p>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500">
+            <p id="minute" class="counter">0</p>
+            <p class="counter-title">
+              Menit</p>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1500">
+            <p id="second" class="counter">0</p>
+            <p class="counter-title">Detik</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <h5 class="satisfy p3 s3 pt4">Z & S</h4>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffafa" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,149.3C672,139,768,85,864,96C960,107,1056,181,1152,208C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    
+    <!-- wedding begin end -->
+
+    <!-- pengantin -->
+    <section id="pengantin">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="satisfy s6" data-aos="fade-up" data-aos-delay="50"
+            data-aos-duration="1000">Mempelai</h2>
+          </div>
+        </div>
+        <div class="row justify-content-between fs-5 text-center">
+          <!-- Pengantin Pria -->
+          <div class="col-12 col-md-6 col-xl-6 p-4">
+            <h4 class="text-center pb2 satisfy s4"
+            data-aos="fade-right" 
+            data-aos-delay="50"
+            data-aos-duration="1000">Zafar Sidik</h4>
+            <img class="imgabout" 
+            data-aos="fade-right" 
+            data-aos-delay="400"
+            data-aos-duration="1000" src="img/Pengantin-karakter/putra.png" alt="web-dev">
+            <div data-aos="fade-right" data-aos-delay="550" data-aos-duration="1000">
+              <p class="pt2 lora">Putra dari</p>
+              <p class="lora">Bpk. Mamat Rahmat <br> & <br> Ibu Enung Nurjanah</p>
+              <p class="satisfy">
+                Dsn. Jajaway 
+                Dsa. Jadikarya 
+                Kec. Langkaplancar 
+                Kab. Pangandaran
+              </p>
+            </div>
+          </div>
+          <!-- Pengantin Wanita -->
+          <div class="col-12 col-md-6 col-xl-6 p-4">
+            <h4 class="text-center pb2 satisfy s4" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">Silfi Lailatul Solihah</h4>
+            <img class="imgabout" data-aos="fade-left" data-aos-delay="400"
+            data-aos-duration="1000" src="img/Pengantin-karakter/putri.png" alt="web-dev">
+            <div data-aos="fade-left" data-aos-delay="550"
+            data-aos-duration="1000">
+              <p class="pt2 lora">Putri dari</p>
+              <p class="lora">
+                Bpk. Asep Saepudin 
+                <br> & <br> 
+                Ibu Dedeh (Ikah)</p>
+              <p class="satisfy">
+                Dsn. Cintakarya 
+                Dsa. CisaruaRt/Rw 02/01
+                Kec. langkaplancar
+                Kab. Pangandaran
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h5 class="satisfy p3 s3 pt4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10">Z & S</h4>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff5ee" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,112C384,139,480,181,576,176C672,171,768,117,864,101.3C960,85,1056,107,1152,112C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir pengantin -->
+    <!-- Peksanaan -->
+    <section id="pelaksanaan">
+      <div class="container-fluid">
+        <div class="row">
+          <h2 class="col text-center s5 pb2 satisfy" data-aos="fade-down" data-aos-delay="50"
+          data-aos-duration="1000">Detail Acara</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <img src="img/gallery/jeremy-wong-weddings-464ps_nOflw-unsplash.jpg" alt="wedding-cerimony" width="100%" data-aos="zoom-in" data-aos-delay="50"
+            data-aos-duration="1000"/>
+            <h3 class="text-center mt-5 satisfy s3" data-aos="zoom-in-left" data-aos-delay="50"
+            data-aos-duration="1000">Upacara Pernikahan</h3>
+            <p class="lora text-center" data-aos="zoom-in-left" data-aos-delay="50"
+            data-aos-duration="1000">
+            Minggu, 29 Mei 2022
+            <br>
+            08:00 - 10:00 WIB
+            <br>
+            Rumah mempelai istri
+            <br>
+            Dsn. Cintakarya Dsa. CisaruaRt/Rw 02/01 Kec. langkaplancar Kab. Pangandaran         
+            </p>
+          </div>
+          <div class="col-md-6 p-4">
+            <img src="img/gallery/bgfix.jpg" alt="wedding-party" width="100%" data-aos="zoom-in" data-aos-delay="50"
+            data-aos-duration="1000"/>
+            <h3 class="text-center mt-5 satisfy s3" data-aos="zoom-in-right" data-aos-delay="50"
+            data-aos-duration="1000">Resepsi Pernikahan</h3>
+            <p class="lora text-center" data-aos="zoom-in-right" data-aos-delay="50"
+            data-aos-duration="1000">
+            Minggu, 29 Mei 2022
+            <br>
+            10:01 sd Selesai
+            <br>
+            Rumah mempelai istri
+            <br>
+            Dsn. Cintakarya Dsa. CisaruaRt/Rw 02/01 Kec. langkaplancar Kab. Pangandaran         
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="text-center satisfy s5 pb2 pt2" data-aos="zoom-in" data-aos-delay="50"
+          data-aos-duration="1000">Google Maps</h1>
+        </div>
+        <div class="row">
+          <div class="col p-4" data-aos="flip-down" data-aos-delay="50"
+          data-aos-duration="1500">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0453810890594!2d108.4421463147768!3d-7.570031694540903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e99b4b1b0ac39b5!2zN8KwMzQnMTIuMSJTIDEwOMKwMjYnMzkuNiJF!5e0!3m2!1sid!2sid!4v1647014409685!5m2!1sid!2sid" 
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffefd5" fill-opacity="1" d="M0,64L48,64C96,64,192,64,288,90.7C384,117,480,171,576,186.7C672,203,768,181,864,149.3C960,117,1056,75,1152,53.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- Peksanaan -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="pb2 satisfy s5" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">Gallery</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col mb-3">
+                <div class="mask" data-aos="fade-left" data-aos-delay="50"
+                data-aos-duration="1000" style="background-image: url(img/gallery/2.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <div class="mask" data-aos="fade-left" data-aos-delay="200"
+                data-aos-duration="1000" style="background-image: url(img/gallery/bgfix2.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col mb-3">
+                <div class="mask height-2x" data-aos="fade-left" data-aos-delay="400"
+                data-aos-duration="1000" style="background-image: url(img/gallery/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="mask" data-aos="fade-left" data-aos-delay="500"
+                data-aos-duration="1000" style="background-image: url(img/gallery/wijdan-mq-H5yiRXDUkto-unsplash.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="mask" data-aos="fade-left" data-aos-delay="600"
+                data-aos-duration="1000" style="background-image: url(img/gallery/bgfix5.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <div class="mask" data-aos="fade-left" data-aos-delay="650"
+                data-aos-duration="1000" style="background-image: url(img/gallery/bgfix6.jpg); background-position: center center; background-size: cover"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffafa" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,101.3C672,96,768,160,864,160C960,160,1056,96,1152,90.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- Contact -->
+    <section id="contact" class="pt7">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 class="lead satisfy pb2" style="font-size: 50px;"></h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Alert -->
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Kami mengucapkan terima kasih!</strong>, atas doa & ucapan bapak/ibu/saudara/i.
+            <!-- <button type="button">Join Grup Wa</button> -->
+            </div>
+            <!-- Akhir alert -->
+            <form name="Ucapan-dan-doa" data-aos="zoom-out-down" data-aos-delay="50"
+            data-aos-duration="1000" id="contact">
+              <div class="mb-3">
+                <label for="nama" class="form-label lora">Nama lengkap</label>
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" required>
+              </div>
+              <div class="mb-3">
+                <label for="ucapan" class="form-label lora">Pesan untuk Mempelai</label>
+                <textarea class="form-control" id="ucapan" rows="3" name="ucapan" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="kehadiran" class="form-label lora">Apakah akan hadir ?</label>
+                <input type="text" class="form-control" id="kehadiran" aria-describedby="kehadiran" name="kehadiran" required>
+              </div>
+            <button type="submit" class="btn btn-primary btn-kirim lora">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2D31FA" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,224C672,224,768,224,864,213.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- akhir contact me -->
+    
+    <!-- footer -->
+    <footer class="text-white text-center pb-5">
+      <div class="ig">
+        <p>Created with <i class="bi bi-bookmark-heart text-white"></i> by <a href="https://www.instagram.com/jejen_adr/" class="text-white fw-bold" target="blank">Jejen</a></p>
+    </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Js Time -->
+    <script src="js/script.js"></script>
+    <!-- Akhir JS time -->
+
+    <!-- Script Navbar -->
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+    <!-- Akhir Script -->
+
+    <!-- Script Contact -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxBufz9v3rLhZlZcl5RNIha_YlbPhUfgEZi_8Mn7QlUb7ngI_ilX00t76AzL2qlKyLosg/exec'
+      const form = document.forms['Ucapan-dan-doa'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika tombol submit di kirim
+        // Tampilkan button loading simpan button kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => { 
+            // Tampilkan button kirim simpan button loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // Tampilkan Alert
+            myAlert.classList.toggle('d-none');
+            // reset Form
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!-- akhir script contact -->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+        <!-- script GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <!-- script GSAP Text -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    
+        <script>
+          gsap.registerPlugin(TextPlugin);
+          gsap.to('.lead', {duration: 3.5, delay: 1.5, text: 'Doa dan Ucapan'});
+          gsap.from('.jumbotron img', {
+            duration: 1, rotateY: 360, opacity: 0
+          });
+          gsap.from('.navbar', {
+            duration: 1, duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'
+          });
+          gsap.from('.display-4', {
+            duration: 1, duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back'
+          });
+        </script>
+    
+        <!-- script AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              once: true,
+            });
+          </script>
+    <!-- Akhir Contact -->
+
+    <!-- script audio -->
+    <script src="js/script_audio.js"></script>
+    <!-- akhir script audio -->
+
+  </body>
+</html>

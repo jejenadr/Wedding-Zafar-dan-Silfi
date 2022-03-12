@@ -1,0 +1,264 @@
+body {
+  background-color: #e70d0d;
+}
+.navbar {
+  font-family: 'Lora', serif;
+}
+.banner-image {
+  background-image: url(img/pelaksanaan/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  text-align: justify align center;
+  color: white;
+}
+.buka {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: #777;
+  border-radius: 15px;
+}
+.buka:hover {
+  color: #111;
+  background: lightblue;
+  box-shadow: 0 0 5px lightblue, 0 0 0px lightblue, 0 0 10px lightblue;
+  transition-delay: 1s;
+}
+.buka span {
+  position: absolute;
+  display: block;
+}
+.buka span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, lightblue);
+}
+.buka:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.buka span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, lightblue);
+}
+.buka:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.buka span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, lightblue);
+}
+.buka:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.buka span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, lightblue);
+}
+.buka:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+h2 {
+  text-align: center;
+}
+.imgabout {
+  width: 300px;
+  height: 300px;
+}
+/* Start | Style Halaman Awal */
+.nama {
+  font-size: 57px;
+  color: #f5f5dc;
+  font-family: 'Lora', sans-serif;
+  font-family: 'Satisfy', cursive;
+  padding-bottom: 1rem;
+}
+.dan {
+  font-size: 48px;
+  color: #f5f5dc;
+  font-family: 'Lora', serif;
+  font-family: 'Satisfy', cursive;
+}
+.info {
+  font-size: 18px;
+  color: #f5f5dc;
+  padding-bottom: 1rem;
+  font-family: 'Lora', sans-serif;
+}
+.sambutan {
+  font-size: 18px;
+  color: #f5f5dc;
+  padding-top: 1rem;
+  font-family: 'Lora', sans-serif;
+}
+.imisial {
+  font-size: 30px;
+  color: #f5f5dc;
+  font-family: 'Lora', sans-serif;
+  font-family: 'Satisfy', cursive;
+  padding-top: 2rem;
+}
+/* Finish | Style Halaman Awal */
+
+/* Style Font */
+.lora {
+  font-family: 'Lora', sans-serif;
+}
+.satisfy {
+  font-family: 'Satisfy', cursive;
+}
+/* End Style FOnt */
+
+/* kebutuhan padding */
+/* padding top */
+.pt0 {
+  padding-top: -2rem;
+}
+.pt1 {
+  padding-top: 1rem;
+}
+.pt2 {
+  padding-top: 2rem;
+}
+.pt3 {
+  padding-top: 3rem;
+}
+.pt4 {
+  padding-top: 4rem;
+}
+.pt5 {
+  padding-top: 5rem;
+}
+.pt6 {
+  padding-top: 6rem;
+}
+.pt7 {
+  padding-top: 7rem;
+}
+/* padding bottom */
+.pb1 {
+  padding-bottom: 1rem;
+}
+.pb2 {
+  padding-bottom: 2rem;
+}
+.pb3 {
+  padding-bottom: 3rem;
+}
+.pb4 {
+  padding-bottom: 4rem;
+}
+.pb5 {
+  padding-bottom: 5rem;
+}
+/* end kebutuhan padding */
+
+/* Kebutuhan Size Text */
+.s1 {
+  font-size: 10px;
+}
+.s2 {
+  font-size: 20px;
+}
+.s3 {
+  font-size: 30px;
+}
+.s4 {
+  font-size: 40px;
+}
+.s5 {
+  font-size: 50px;
+}
+.s6 {
+  font-size: 55px;
+}
+/* Akhir Kebutuhan Size Text */
+.captgl {
+  padding-bottom: 3rem;
+}
+#pengantin {
+  background-color: #fffafa;
+  padding-top: 7.5rem;
+}
+#pengantin img {
+  border-radius: 15px;
+}
+#wedingbegin {
+  background-color: #f5f5dc;
+}
+#pelaksanaan {
+  padding-top: 7.5rem;
+  background-color: #fff5ee;
+}
+#pelaksanaan img,
+iframe {
+  border-radius: 8px;
+}
+.mask {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.height-2x {
+  height: 616px;
+}
+#gallery {
+  padding-top: 7.5rem;
+  background-color: #ffefd5;
+}
+#contact {
+  background-color: #fffafa;
+}
+.ig {
+  background-color: #2d31fa;
+}
+footer {
+  background-color: #2d31fa;
+}
+
+/* style Time */
+.counter {
+  font-size: 40px;
+  font-family: 'lora', sans-serif;
+}
+.counter-title {
+  font-size: 25px;
+  font-family: 'lora', sans-serif;
+}
+/* akhir style Time */
+
+/* style warna hurup */
+.putih {
+  color: aliceblue;
+}
+.hitam {
+  color: #777;
+}
+/* ahir style warna hurup */
